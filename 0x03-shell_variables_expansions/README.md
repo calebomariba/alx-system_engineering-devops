@@ -10,3 +10,6 @@ This script adds /action to the PATH environment variable as the last directory 
 
 ## 3-paths
 This script counts the number of directories in the PATH environment variable.
+
+## 4-global_variables
+This script lists all environment variables in the current shell.
