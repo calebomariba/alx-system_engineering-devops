@@ -37,3 +37,6 @@ This script converts a binary number stored in the environment variable BINARY t
 
 ## 12-combinations
 This script prints all possible combinations of two lowercase letters (except oo) in alphabetical order.
+
+## 13-print_float
+This script prints the number in the environment variable NUM with two decimal places, followed by a new line.
