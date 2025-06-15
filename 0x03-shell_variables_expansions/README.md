@@ -16,3 +16,6 @@ This script lists all environment variables in the current shell.
 
 ## 5-local_variables
 This script lists all local variables, environment variables, and functions in the current shell.
+
+## 6-create_local_variable
+This script creates a local variable named BEST with the value School.
