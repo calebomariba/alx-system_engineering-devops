@@ -25,3 +25,6 @@ This script creates a global variable named BEST with the value School.
 
 ## 8-true_knowledge
 This script prints the result of adding 128 to the value of the environment variable TRUEKNOWLEDGE, followed by a new line.
+
+## 9-divide_and_rule
+This script prints the result of dividing the environment variable POWER by DIVIDE, followed by a new line.
