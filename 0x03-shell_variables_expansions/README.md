@@ -28,3 +28,6 @@ This script prints the result of adding 128 to the value of the environment vari
 
 ## 9-divide_and_rule
 This script prints the result of dividing the environment variable POWER by DIVIDE, followed by a new line.
+
+## 10-love_exponent_breath
+This script prints the result of BREATH raised to the power of LOVE, followed by a new line.
