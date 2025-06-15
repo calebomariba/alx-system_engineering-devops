@@ -13,3 +13,6 @@ This script counts the number of directories in the PATH environment variable.
 
 ## 4-global_variables
 This script lists all environment variables in the current shell.
+
+## 5-local_variables
+This script lists all local variables, environment variables, and functions in the current shell.
