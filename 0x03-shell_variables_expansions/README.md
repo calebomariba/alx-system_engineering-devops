@@ -19,3 +19,9 @@ This script lists all local variables, environment variables, and functions in t
 
 ## 6-create_local_variable
 This script creates a local variable named BEST with the value School.
+
+## 7-create_global_variable
+This script creates a global variable named BEST with the value School.
+
+## 8-true_knowledge
+This script prints the result of adding 128 to the value of the environment variable TRUEKNOWLEDGE, followed by a new line.
