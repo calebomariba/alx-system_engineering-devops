@@ -7,3 +7,6 @@ This script prints "hello user", where user is the current Linux username.
 
 ## 2-path
 This script adds /action to the PATH environment variable as the last directory the shell looks into.
+
+## 3-paths
+This script counts the number of directories in the PATH environment variable.
