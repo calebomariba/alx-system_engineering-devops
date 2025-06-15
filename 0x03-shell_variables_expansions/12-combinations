@@ -1,2 +1,2 @@
 #!/bin/bash
-for i in {a..z}{a..z} do test $i != oo && echo $i done
+for i in {a..z}{a..z} do echo $i|grep -v oo done
