@@ -31,3 +31,6 @@ This script prints the result of dividing the environment variable POWER by DIVI
 
 ## 10-love_exponent_breath
 This script prints the result of BREATH raised to the power of LOVE, followed by a new line.
+
+## 11-binary_to_decimal
+This script converts a binary number stored in the environment variable BINARY to decimal, followed by a new line.
