@@ -34,3 +34,6 @@ This script prints the result of BREATH raised to the power of LOVE, followed by
 
 ## 11-binary_to_decimal
 This script converts a binary number stored in the environment variable BINARY to decimal, followed by a new line.
+
+## 12-combinations
+This script prints all possible combinations of two lowercase letters (except oo) in alphabetical order.
