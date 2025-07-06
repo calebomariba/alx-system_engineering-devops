@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+# Install and configure HAProxy on lb-01 server
+
+# Update package lists
+apt-get update -y
+
+# Install HAProxy
+apt-get install -y haproxy
+
+# Enable HAProxy to be managed via init script
+echo "ENABLED=1" > /etc/default/haproxy
+
+# Backup default HAProxy configuration
+cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.bak
+
+# Configure HAProxy
+cat > /etc/haproxy/haproxy.cfg << EOF
+global
+    log /dev/log local0
+    chroot /var/lib/haproxy
+    pidfile /var/run/haproxy.pid
+    maxconn 4000
+    user haproxy
+    group haproxy
+    daemon
+
+defaults
+    log global
+    mode http
+    option httplog
+    option dontlognull
+    timeout connect 5000
+    timeout client 50000
+    timeout server 50000
+
+frontend http_front
+    bind *:80
+    stats uri /haproxy?stats
+    default_backend http_back
+
+backend http_back
+    balance roundrobin
+    server web-01 [STUDENT_ID]-web-01:80 check
+    server web-02 [STUDENT_ID]-web-02:80 check
+EOF
+
+# Replace [STUDENT_ID] with actual student ID
+# Note: This needs to be replaced with your actual student ID
+# sed -i "s/\[STUDENT_ID\]/your_actual_student_id/" /etc/haproxy/haproxy.cfg
+
+# Restart HAProxy service
+service haproxy restart
+
+# Verify HAProxy is running
+service haproxy status
