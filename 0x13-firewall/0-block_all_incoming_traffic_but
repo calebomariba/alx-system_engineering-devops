@@ -1,0 +1,23 @@
+# Install ufw if not already installed
+sudo apt-get update
+sudo apt-get install ufw
+
+# Reset ufw to default settings to ensure a clean slate
+sudo ufw reset
+
+# Set default policy to deny all incoming traffic
+sudo ufw default deny incoming
+
+# Allow outgoing traffic (optional, as this is typically the default)
+sudo ufw default allow outgoing
+
+# Allow specific TCP ports
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+
+# Enable ufw to apply the rules
+sudo ufw enable
+
+# Verify the rules
+sudo ufw status
