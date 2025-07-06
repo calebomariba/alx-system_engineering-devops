@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
-# This script installs Nginx, configures it to return 'Hello World!' at the root, and starts it without using systemctl
+# Installs Nginx, sets up a Hello World page, and starts Nginx without systemctl
 
-# Install nginx non-interactively
+# Exit on any error
+set -e
+
+# Update package lists and install nginx
 apt-get update -y
 apt-get install nginx -y
 
-# Create custom HTML content for the root page
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+# Replace the default index file with "Hello World!"
+echo "Hello World!" > /var/www/html/index.html
 
-# Start Nginx using service instead of systemctl
+# Ensure Nginx is started using service command
 service nginx start
