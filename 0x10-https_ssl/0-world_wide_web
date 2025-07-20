@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#HTTPS & SSL Configuration - ALX System Engineering
+#
 get_subdomain_info() {
     local domain=$1
     local subdomain=$2
